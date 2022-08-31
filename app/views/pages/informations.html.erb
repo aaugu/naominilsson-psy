@@ -1,0 +1,49 @@
+<div class="general-container">
+  <div class="header">
+    <div></div>
+    <%= image_tag "logo-titles.png", class: "logo-title" %>
+    <h1 class="text-center">INFORMATIONS</h1>
+    <%= image_tag "logo-titles.png", class: "logo-title"%>
+    <div></div>
+  </div>
+
+  <p class="justify-text w-75 m-auto mb-4 change-justify-text">
+    <%= @paragraph_1 %><br><br><%= @paragraph_2 %>
+  </p>
+
+  <p class="justify-text w-75 m-auto change-justify-text">
+    Vous trouverez ici le modèle d’ordonnance à faire signer par votre médecin si vous souhaitez que votre suivi soit remboursé par la Lamal.
+  </p>
+  <div class="text-center mt-3 mb-5">
+    <%= link_to '<i class="fa-solid fa-file-pdf"></i>'.html_safe, asset_path("ordonnance_psychologie_psychotherapie.pdf", format: :pdf), target: "_blank", class: "pdf-logo" %>
+  </div>
+
+    <div class="subheader py-2">
+      <div></div>
+      <h2 class="text-center">RESSOURCES</h2>
+      <div></div>
+    </div>
+
+  <% if @posts.count == 0 %>
+    <div class="text-center m-auto">
+      <p>À venir.</p>
+    </div>
+  <% else %>
+    <div class="posts-container">
+      <% @posts.each do |post| %>
+        <div class="post-card d-flex justify-content-between">
+          <div class="post-xs-hidden">
+            <%= image_tag "logo-post.png", class: "post-img " %>
+            <p><em><%= post.created_at.strftime("%d %b %Y") %></em></p>
+          </div>
+          <div class="flex-grow-1">
+            <p class="post-card-header"><%= post.title.upcase %></p>
+            <p class="post-date-xs"><em><%= post.created_at.strftime("%d %b %Y") %></em></p>
+            <p class="justify-text mb-3"><%= post.content %></p>
+            <%= link_to "Lien vers l'article", post.url, class: "article-link-button" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

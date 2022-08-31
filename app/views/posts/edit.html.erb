@@ -1,0 +1,25 @@
+<div class="general-container">
+  <div class="header">
+    <div></div>
+    <%= image_tag "logo-titles.png", class: "logo-title" %>
+    <h1 class="text-center">MODIFIER UN POST</h1>
+    <%= image_tag "logo-titles.png", class: "logo-title"%>
+    <div></div>
+  </div>
+
+  <div class="forms-content m-auto">
+    <%= simple_form_for(@post) do |f| %>
+      <%= f.input :title,
+                  label: "Titre" %>
+      <%= f.input :content,
+                  label: "Description",
+                  :input_html => {rows: 7} %>
+      <%= f.input :url,
+                  label: "Lien vers l'article" %>
+      <div class="d-flex justify-content-between align-items-center mt-5">
+        <%= link_to "Revenir en arrière", :back, class:'btn-cancel text-center' %>
+        <%= f.submit "Modifier", class: "form-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
