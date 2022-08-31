@@ -45,19 +45,6 @@
   }
 }
 
-.article-link-button {
-  padding: 1vh 1vw;
-  border-radius: 10px;
-  background-color: $deep-yellow;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
-  float: right;
-}
-
-.article-link-button:hover {
-  color: $blue;
-}
-
 @media(min-width: 992px) {
   .post-card {
     width: 60%;
