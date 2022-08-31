@@ -1,0 +1,21 @@
+.psy-logo {
+  height: 10vh;
+  margin-bottom: 5vh;
+}
+
+.logo-title {
+  height: 6vh;
+  object-fit: contain;
+  margin: 0 1vw;
+  display: none;
+}
+
+.pdf-logo {
+  font-size: 32px;
+}
+
+@media(min-width: 400px) {
+  .logo-title {
+    display: block;
+  }
+}

@@ -1,0 +1,28 @@
+.sections {
+  margin: 0 auto;
+}
+
+.section-card {
+  padding: 3vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media(min-width: 576px) {
+  .sections {
+    padding: 0 6vw;
+  }
+}
+
+
+@media(min-width: 992px) {
+  .sections {
+    padding: 0 12vw;
+  }
+}
+
+@media(min-width: 1400px) {
+  .sections {
+    padding: 0 16vw;
+  }
+}
