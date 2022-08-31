@@ -2,13 +2,13 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 puts "Cleaning database..."
 Post.destroy_all
-User.destroy_all
+# User.destroy_all
 Information.destroy_all
 
-puts "Creating users..."
-admin = User.create(email: "admin@email.ch", password: "123456")
-puts "Created #{admin.email}"
-admin.admin = true
+# puts "Creating users..."
+# admin = User.create(email: "admin@email.ch", password: "123456")
+# puts "Created #{admin.email}"
+# admin.admin = true
 # user = User.create(email: "user@email.ch", password: "123456")
 # puts "Created #{user.email}"
 
