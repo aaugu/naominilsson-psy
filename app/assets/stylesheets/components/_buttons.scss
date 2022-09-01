@@ -38,6 +38,7 @@
 }
 
 .btn-cancel {
+  text-align: center;
   color: $blue;
   padding: 1vh 2vh;
   border-radius: 10px;
@@ -58,6 +59,10 @@
 
 .dashboard-btn:hover {
   color: $blue;
+}
+
+.back-btn {
+  margin-bottom: 2vh;
 }
 
 .log-out-btn {
@@ -85,4 +90,24 @@
 
 .article-link-button:hover {
   color: $blue;
+}
+
+@media(max-width: 576px) {
+  .btn-xs-hidden {
+    display: none;
+  }
+
+  .btn-md-hidden {
+    display: block;
+  }
+}
+
+@media(min-width: 577px) {
+  .btn-xs-hidden {
+    display: block;
+  }
+
+  .btn-md-hidden {
+    display: none;
+  }
 }

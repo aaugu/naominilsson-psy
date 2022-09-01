@@ -2,6 +2,31 @@
   width: 80%;
 }
 
+.update-account-btns {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  .update-btn {
+    margin-bottom: 3vh;
+  }
+}
+
+@media(min-width: 576px) {
+  .update-account-btns {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .update-btn {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media(min-width: 768px) {
   .forms-content {
     width: 50%;
