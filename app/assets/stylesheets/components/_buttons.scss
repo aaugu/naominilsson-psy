@@ -43,7 +43,7 @@
   border-radius: 10px;
   background: rgba($color: $light-green, $alpha: 0.2);
   font-weight: 600;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard-btn {
@@ -61,7 +61,7 @@
 }
 
 .log-out-btn {
-  float: right;
+  // float: right;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   border: none;
 }

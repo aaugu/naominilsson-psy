@@ -1,3 +1,8 @@
+.account-btns {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .sections {
   margin: 0 auto;
 }
@@ -11,6 +16,12 @@
 @media(min-width: 576px) {
   .sections {
     padding: 0 6vw;
+  }
+
+  .account-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
