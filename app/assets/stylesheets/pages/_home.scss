@@ -56,6 +56,24 @@
   }
 }
 
+@media(max-width: 390px) {
+.banner-title {
+    font-size: 5vh;
+    padding-top: 8vh;
+  }
+
+  .banner-subtitle {
+    font-size: 3vh;
+  }
+}
+
+@media(min-width: 391px) {
+  .banner-title {
+    font-size: 8vh;
+    padding-top: 8vh;
+  }
+}
+
 @media(min-width: 768px) {
   .home-text {
     width: 70%;
