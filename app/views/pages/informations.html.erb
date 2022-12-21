@@ -9,7 +9,7 @@
   </div>
 
   <p class="justify-text w-75 m-auto mb-4 change-justify-text">
-    A partir du premier juillet 2022, le modèle de la prescription est entré en vigueur, qui permet au suivi d’être remboursé par l’assurance de base sur prescription d’un médecin généraliste, psychiatre ou pédiatre.<br><br>A priori cela ne devrait pas engendrer de changement pour les personnes qui passent par leur assurance complémentaire et souhaitent continuer de le faire.
+    A partir du premier juillet 2022, le modèle de la prescription est entré en vigueur, qui permet au suivi d’être remboursé par l’assurance de base sur prescription d’un médecin généraliste, psychiatre ou pédiatre.<br><br>Plusieurs assurances complémentaires ne prennent par conséquent plus en charge la psychothérapie. Si vous aviez l’intention d’utiliser votre complémentaire vérifiez les modalités auprès d’eux avant de prendre rendez-vous.
   </p>
 
   <p class="justify-text w-75 m-auto change-justify-text">
@@ -25,8 +25,43 @@
       <div></div>
     </div>
 
-    <div class="text-center m-auto">
+  <%# <% if @posts.count == 0 %>
+    <%# <div class="text-center m-auto">
       <p>À venir.</p>
-    </div>
+    </div> %>
+  <%# <% else %>
+    <div class="posts-container">
+      <%# <% @posts.each do |post| %>
+        <div class="post-card d-flex justify-content-between">
+          <div class="post-xs-hidden">
+            <%= image_tag "logo-post.png", class: "post-img " %>
+            <p><em>21 Dec 2022</em></p>
+          </div>
+          <div class="flex-grow-1">
+            <p class="post-card-header">COUPLES</p>
+            <p class="post-date-xs"><em>21 Dec 2022</em></p>
+            <p class="justify-text mb-3">Un épisode de podcast utile aux couples (et l’ensemble des épisodes même si parfois polémique peut faire beaucoup de bien aux hommes) :</p>
+            <%= link_to "Lien vers l'article", "https://www.binge.audio/podcast/les-couilles-sur-la-table/des-chaussettes-et-des-hommes", class: "article-link-button" %>
+          </div>
+        </div>
 
+        <div class="post-card d-flex justify-content-between">
+          <div class="post-xs-hidden">
+            <%= image_tag "logo-post.png", class: "post-img " %>
+            <p><em>21 Dec 2022</em></p>
+          </div>
+          <div class="flex-grow-1">
+            <p class="post-card-header">LES TROUBLES PSYCHIQUES</p>
+            <p class="post-date-xs"><em>21 Dec 2022</em></p>
+            <p class="justify-text mb-3">Voilà un podcast accessible et bien documenté concernant les différents troubles psychiques :</p>
+            <%= link_to "Lien vers l'article", "https://www.rts.ch/podcasts-originaux/programmes/dingue/podcast/", class: "article-link-button" %>
+          </div>
+        </div>
+      <%# <% end %>
+    </div>
+  <%# <#% end %>
 </div>
+
+<%# <%= post.title.upcase %>
+<%# <%= post.created_at.strftime("%d %b %Y") %>
+<%# <%= post.content %>
